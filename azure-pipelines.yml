@@ -14,8 +14,4 @@ variables:
 
 
 steps:
-- script: dotnet build --configuration $(buildConfiguration) 
-
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'build'
+- script: dotnet build --configuration $(buildConfiguration) displayName:'dotnet build $(buildConfiguration)'
